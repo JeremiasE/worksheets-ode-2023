@@ -124,6 +124,15 @@ def solve_ivp(f,variables,t_range,initial_value,max_step=0.1):
     solution = scipy.integrate.solve_ivp(right_hand_side, t_range,initial_value, max_step=0.1)
     return solution
 
+def solve_non_autonomous_ivp(f,time_var, space_vars,t_range,initial_value,max_step=0.1):
+    f1 = lambdify([time_var]+list(space_vars), f[0])
+    f2 = lambdify([time_var]+list(space_vars), f[1])
+    def right_hand_side(t,y):
+        return (f1(t,y[0],y[1]),f2(t,y[0],y[1]))
+    solution = scipy.integrate.solve_ivp(right_hand_side, t_range,initial_value, max_step=0.1)
+    return solution
+
+
 def plot_solution_pair(f,variables,t1=18.0,x_0=0.2,y_0=0):
     fig = plt.figure()
     (ax1,ax2) = fig.subplots(1,2)
