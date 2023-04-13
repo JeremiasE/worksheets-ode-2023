@@ -11,6 +11,7 @@ from sympy.printing.precedence import precedence
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
+import scipy.integrate
 
 # we have to monkey path 
 
