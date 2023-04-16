@@ -7,7 +7,12 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
  <tr>
   <td>
    <a href="/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb">Das mathematische Pendel</a>
-  </td>  
+  </td>
+    <td>
+   <a href="https://mybinder.org/v2/gh/JeremiasE/worksheets-ode-2023/HEAD?labpath=examples%2F1-Pendel.ipynb" rel="nofollow">
+    <img src="https://mybinder.org/badge_logo.svg" alt="Open In Colab" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg"  height="22ex">
+   </a>
+  </td>
   <td>
    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb" rel="nofollow">
    <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle" height="22ex">
