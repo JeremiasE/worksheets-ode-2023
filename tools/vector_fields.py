@@ -8,12 +8,19 @@ from sympy.core import Basic, S
 from sympy.core.function import Lambda
 from sympy.printing.codeprinter import CodePrinter
 from sympy.printing.precedence import precedence
+from sympy.plotting.plot import Line2DBaseSeries
+from sympy.plotting.plot import Plot
+from sympy import sympify, Expr, Function
+from sympy.plotting.plot import check_arguments, flat, vectorized_lambdify
+from sympy.external import import_module
+
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
 import scipy.integrate
 
-# we have to monkey path 
+
+# we have to monkey patch 
 
 def _new_print_Pow(self, expr):
     PREC = precedence(expr)
@@ -80,17 +87,18 @@ def plot_vector_field(g,var1,var2, numpoints=20, ax=None, **args):
     if ax is None:
         fig = plt.figure()
         ax = fig.add_subplot(1, 1, 1)
-    #ax.spines['left'].set_position('center')
-    #ax.spines['bottom'].set_position('center')
-    #ax.spines['right'].set_color('none')
-    #ax.spines['top'].set_color('none')
-    ax.hlines(0,var1[1],var1[2],color="black")
-    ax.vlines(0,var2[1],var2[2],color="black")
     ax.set_xlim(var1[1],var1[2])
     ax.set_ylim(var2[1],var2[2])
     ax.quiver(X,Y,U,V, **args)
-    #ax.legend(loc=1)
     return ax
+
+def add_central_axis(ax):
+    xmin, xmax = ax.get_xlim()
+    ymin, ymax = ax.get_ylim()
+    ax.hlines(0,xmin,xmax,color="black")
+    ax.vlines(0,ymin,ymax,color="black")
+    return ax
+    
 
 def plot_streamlines(g,var1,var2,numpoints=100, ax=None, **args):
     X,Y = np.meshgrid(np.linspace(var1[1],var1[2],numpoints), np.linspace(var2[1],var2[2],numpoints))
@@ -108,8 +116,6 @@ def plot_streamlines(g,var1,var2,numpoints=100, ax=None, **args):
     #ax.spines['bottom'].set_position('center')
     #ax.spines['right'].set_color('none')
     #ax.spines['top'].set_color('none')
-    ax.hlines(0,var1[1],var1[2],color="black")
-    ax.vlines(0,var2[1],var2[2],color="black")
     ax.set_xlim(var1[1],var1[2])
     ax.set_ylim(var2[1],var2[2])
     ax.streamplot(X,Y,U,V,**args)
@@ -152,3 +158,44 @@ def plot_solution_non_autonomous(f, time_var, space_vars,initial_value, t_1=12):
 
 def norm(f):
     return sympy.sqrt((f.T@f)[0])
+
+
+def plot(f, xtuple, ylimits=None, numpoints=1000, ax=None, detect_poles = True, eps=0.01,**kwargs):
+    (x, xmin, xmax) = xtuple
+    f1 = lambdify(x, f)
+    X = np.linspace(xmin,xmax,numpoints)
+    Y = np.vectorize(f1)(X)
+    if detect_poles:
+        X, Y = _detect_poles_helper(X,Y,eps)
+
+    if ax is None:
+        fig = plt.figure()
+        ax = fig.add_subplot(1, 1, 1)
+
+    ax.set_xlim(xmin,xmax)
+    if ylimits:
+        ax.set_ylim(*ylimits)
+    else:
+        ax.set_ylim(min(Y),max(Y))
+
+    ax.plot(X,Y,**kwargs)
+    
+    return ax
+
+# This is taken from sympy plotting backend 
+def _detect_poles_helper(x, y, eps=0.01):
+    """Compute the steepness of each segment. If it's greater than a
+    threshold, set the right-point y-value non NaN.
+    """
+    np = import_module('numpy')
+
+    yy = y.copy()
+    threshold = np.pi / 2 - eps
+    for i in range(len(x) - 1):
+        dx = x[i + 1] - x[i]
+        dy = abs(y[i + 1] - y[i])
+        angle = np.arctan(dy / dx)
+        if abs(angle) >= threshold:
+            yy[i + 1] = np.nan
+    return x, yy
+
