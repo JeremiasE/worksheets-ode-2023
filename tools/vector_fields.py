@@ -127,7 +127,7 @@ def solve_ivp(f,variables,t_range,initial_value,max_step=0.1):
     f2 = lambdify(variables, f[1])
     def right_hand_side(t,y):
         return (f1(y[0],y[1]),f2(y[0],y[1]))
-    solution = scipy.integrate.solve_ivp(right_hand_side, t_range,initial_value, max_step=0.1)
+    solution = scipy.integrate.solve_ivp(right_hand_side, t_range,initial_value, dense_output=True, max_step=0.1)
     return solution
 
 def solve_non_autonomous_ivp(f,time_var, space_vars,t_range,initial_value,max_step=0.1):
