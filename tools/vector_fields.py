@@ -160,7 +160,7 @@ def norm(f):
     return sympy.sqrt((f.T@f)[0])
 
 
-def plot(f, xtuple, ylimits=None, numpoints=1000, ax=None, detect_poles = True, eps=0.01,**kwargs):
+def plot(f, xtuple, ylimits=None, numpoints=3000, ax=None, detect_poles = True, eps=0.01,**kwargs):
     (x, xmin, xmax) = xtuple
     f1 = lambdify(x, f)
     X = np.linspace(xmin,xmax,numpoints)
@@ -199,3 +199,15 @@ def _detect_poles_helper(x, y, eps=0.01):
             yy[i + 1] = np.nan
     return x, yy
 
+def plot_slope_field(g,var1,var2, numpoints=20, ax=None, **kwargs):
+    norm_inverse = 1 / sympy.sqrt((g**2+1))
+    g_normalized = g * norm_inverse
+    return plot_vector_field(
+        sympy.Matrix((norm_inverse,g_normalized)),var1,var2, 
+        numpoints=numpoints, 
+        ax = ax, 
+        headwidth = 0, 
+        headlength = 0, 
+        headaxislength = 0,
+        pivot = "middle", 
+        **kwargs)
