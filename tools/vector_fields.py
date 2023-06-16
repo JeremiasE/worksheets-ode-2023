@@ -13,6 +13,7 @@ from sympy.plotting.plot import Plot
 from sympy import sympify, Expr, Function
 from sympy.plotting.plot import check_arguments, flat, vectorized_lambdify
 from sympy.external import import_module
+from matplotlib import colors
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -71,9 +72,8 @@ def field_player(f,width=1300,height=700):
     out = widgets.Output(layout={'border': '1px solid black'})
     from IPython.display import IFrame
     url = 'https://anvaka.github.io/fieldplay/?cx=0.0017000000000000348&cy=0&w=8.543199999999999&h=8.543199999999999&dt=0.01&fo=0.998&dp=0.009&cm=1'+'&vf='+urllib.parse.quote(code)
-    with out:
-        display(IFrame(url, width=width, height=height))
-    return out
+    return IFrame(url, width=width, height=height)
+
 
 def plot_vector_field(g,var1,var2, numpoints=20, ax=None, **args):
     X,Y = np.meshgrid(np.linspace(var1[1],var1[2],numpoints), np.linspace(var2[1],var2[2],numpoints))
@@ -89,7 +89,7 @@ def plot_vector_field(g,var1,var2, numpoints=20, ax=None, **args):
         ax = fig.add_subplot(1, 1, 1)
     ax.set_xlim(var1[1],var1[2])
     ax.set_ylim(var2[1],var2[2])
-    ax.quiver(X,Y,U,V, **args)
+    ax.quiver(X,Y,U,V, angles='xy',**args)
     return ax
 
 def add_central_axis(ax):
@@ -199,7 +199,7 @@ def _detect_poles_helper(x, y, eps=0.01):
             yy[i + 1] = np.nan
     return x, yy
 
-def plot_slope_field(g,var1,var2, numpoints=20, ax=None, **kwargs):
+def plot_slope_field(g,var1,var2, numpoints=20, ax=None, pivot="middle", **kwargs):
     norm_inverse = 1 / sympy.sqrt((g**2+1))
     g_normalized = g * norm_inverse
     return plot_vector_field(
@@ -209,5 +209,11 @@ def plot_slope_field(g,var1,var2, numpoints=20, ax=None, **kwargs):
         headwidth = 0, 
         headlength = 0, 
         headaxislength = 0,
-        pivot = "middle", 
+        pivot = pivot, 
         **kwargs)
+
+def truncate_colormap(cmap, minval=0.0, maxval=1.0, n=100):
+    new_cmap = colors.LinearSegmentedColormap.from_list(
+        'trunc({n},{a:.2f},{b:.2f})'.format(n=cmap.name, a=minval, b=maxval),
+        cmap(np.linspace(minval, maxval, n)))
+    return new_cmap
