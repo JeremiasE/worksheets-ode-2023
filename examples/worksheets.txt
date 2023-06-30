@@ -1,0 +1,9 @@
+1-Pendel.ipynb,Das mathematische Pendel
+2-Slope_fields.ipynb,Richtungsfelder
+2-Logistic.ipynb,Logistisches Wachstum
+4-Flow.ipynb,Lösungsflüsse
+5-Eulerpath.ipynb,Eulerpolygonzüge
+6-Damped-Harmonic.ipynb,Gedämpfter harmonischer Oszillator
+7-Hamiltonian.ipynb,Hamiltonsche Systeme
+8-Linear-planar-autononomous.ipynb,Lineare planarae autonome Systeme
+9-Attraktivität.ipynb,Beispiele für instabile attraktive Systeme
