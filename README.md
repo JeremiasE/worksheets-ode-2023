@@ -2,6 +2,8 @@
 Worksheets Gewöhnliche Differentialgleichungen SS 2023
 
 ## Worksheets
+Man beachte, dass Kaggle und Gradient nur funktionieren, wenn man dort eingeloggt ist, da sonst das Notebook nicht auf das Internet zugreifen kann.
+
 <table>
 <tr>
   <td>
@@ -13,13 +15,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/1-Pendel.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -33,13 +40,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Slope_fields.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Slope_fields.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Slope_fields.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Slope_fields.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Slope_fields.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -53,13 +65,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Logistic.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Logistic.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Logistic.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Logistic.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/2-Logistic.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -73,13 +90,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/4-Flow.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/4-Flow.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/4-Flow.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/4-Flow.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/4-Flow.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -93,13 +115,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/5-Eulerpath.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/5-Eulerpath.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/5-Eulerpath.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/5-Eulerpath.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/5-Eulerpath.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -113,13 +140,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/6-Damped-Harmonic.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/6-Damped-Harmonic.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/6-Damped-Harmonic.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/6-Damped-Harmonic.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/6-Damped-Harmonic.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -133,13 +165,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/7-Hamiltonian.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/7-Hamiltonian.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/7-Hamiltonian.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/7-Hamiltonian.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/7-Hamiltonian.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -153,13 +190,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/8-Linear-planar-autononomous.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/8-Linear-planar-autononomous.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/8-Linear-planar-autononomous.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/8-Linear-planar-autononomous.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/8-Linear-planar-autononomous.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
@@ -173,13 +215,18 @@ Worksheets Gewöhnliche Differentialgleichungen SS 2023
     </a>
   </td>
   <td>
-    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/9-Attraktivität.ipynb" rel="nofollow">
-      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
+    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/9-Attraktivität.ipynb" rel="nofollow">
+      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
     </a>
   </td>
   <td>
-    <a href="https://colab.research.google.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/9-Attraktivität.ipynb" rel="nofollow">
-      <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" height="22ex">
+   <a href="https://console.paperspace.com/github/JeremiasE/worksheets-ode-2023/blob/main/examples/9-Attraktivität.ipynb">
+      <img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run on Gradient"/>
+    </a>
+  </td>
+  <td>
+    <a href="https://kaggle.com/kernels/welcome?src=https://github.com/JeremiasE/worksheets-ode-2023/blob/main/examples/9-Attraktivität.ipynb" rel="nofollow">
+      <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" height="22ex">
     </a>
   </td>
 </tr>
